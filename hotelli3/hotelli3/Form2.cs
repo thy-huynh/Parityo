@@ -16,5 +16,20 @@ namespace hotelli3
         {
             InitializeComponent();
         }
+
+        private void hallitseAsiakkaitaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hallitseVarauksiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hallitseHuoneitaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

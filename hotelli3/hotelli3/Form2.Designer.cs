@@ -72,18 +72,21 @@
             this.hallitseAsiakkaitaToolStripMenuItem.Name = "hallitseAsiakkaitaToolStripMenuItem";
             this.hallitseAsiakkaitaToolStripMenuItem.Size = new System.Drawing.Size(112, 20);
             this.hallitseAsiakkaitaToolStripMenuItem.Text = "Hallitse asiakkaita";
+            this.hallitseAsiakkaitaToolStripMenuItem.Click += new System.EventHandler(this.hallitseAsiakkaitaToolStripMenuItem_Click);
             // 
             // hallitseVarauksiaToolStripMenuItem
             // 
             this.hallitseVarauksiaToolStripMenuItem.Name = "hallitseVarauksiaToolStripMenuItem";
             this.hallitseVarauksiaToolStripMenuItem.Size = new System.Drawing.Size(110, 20);
             this.hallitseVarauksiaToolStripMenuItem.Text = "Hallitse varauksia";
+            this.hallitseVarauksiaToolStripMenuItem.Click += new System.EventHandler(this.hallitseVarauksiaToolStripMenuItem_Click);
             // 
             // hallitseHuoneitaToolStripMenuItem
             // 
             this.hallitseHuoneitaToolStripMenuItem.Name = "hallitseHuoneitaToolStripMenuItem";
             this.hallitseHuoneitaToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
             this.hallitseHuoneitaToolStripMenuItem.Text = "Hallitse huoneita";
+            this.hallitseHuoneitaToolStripMenuItem.Click += new System.EventHandler(this.hallitseHuoneitaToolStripMenuItem_Click);
             // 
             // Form2
             // 
