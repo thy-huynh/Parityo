@@ -33,6 +33,32 @@ namespace hotelli3
 
             komento.Parameters.Add("@kn", MySqlDbType.VarChar).Value = KayttajaTB.Text;
             komento.Parameters.Add("@ss", MySqlDbType.VarChar).Value = SalaTB.Text;
+
+            adapteri.SelectCommand = komento;
+            adapteri.Fill(taulu);
+
+            if(taulu.Rows.Count > 0 ) 
+            {
+                this.Hide();
+                Form2 plomake = new Form2();
+                plomake.Show();
+            }
+            else 
+            {
+                if(KayttajaTB.Text.Trim().Equals(""))
+                {
+                    MessageBox.Show("Syötä käyttäjänimi kirjautuaksesi");
+                }
+                else if (SalaTB.Text.Trim().Equals("")) 
+                {
+                    MessageBox.Show("Syötä salasana kirjautuaksesi");
+                }
+                else 
+                {
+                    MessageBox.Show("Käyttäjänimeä tai salasanaa ei löydy");
+
+                }
+            }
         }
     }
 }
