@@ -111,6 +111,7 @@
             this.KirjauduBT.TabIndex = 4;
             this.KirjauduBT.Text = "Kirjaudu";
             this.KirjauduBT.UseVisualStyleBackColor = true;
+            this.KirjauduBT.Click += new System.EventHandler(this.KirjauduBT_Click);
             // 
             // label1
             // 
