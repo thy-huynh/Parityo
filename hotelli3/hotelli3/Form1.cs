@@ -20,7 +20,7 @@ namespace hotelli3
 
         private void KirjauduBT_Click(object sender, EventArgs e)
         {
-            Yhdista tietokantaan = new Yhdista();
+            Class1 tietokantaan = new Class1();
 
             DataTable taulu = new DataTable();
             MySqlDataAdapter adapteri = new MySqlDataAdapter();
