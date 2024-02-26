@@ -17,6 +17,11 @@ namespace hotelli3
             InitializeComponent();
         }
 
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e) 
+        {
+            Application.Exit();
+        }
+
         private void hallitseAsiakkaitaToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
