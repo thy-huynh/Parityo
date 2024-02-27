@@ -30,7 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.VarauksetDG = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,7 +48,7 @@
             this.SisaanDTP = new System.Windows.Forms.DateTimePicker();
             this.UlosDTP = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VarauksetDG)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -68,13 +68,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Varausten hallinta";
             // 
-            // dataGridView1
+            // VarauksetDG
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(483, 113);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(305, 325);
-            this.dataGridView1.TabIndex = 1;
+            this.VarauksetDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.VarauksetDG.Location = new System.Drawing.Point(483, 113);
+            this.VarauksetDG.Name = "VarauksetDG";
+            this.VarauksetDG.Size = new System.Drawing.Size(305, 325);
+            this.VarauksetDG.TabIndex = 1;
+            this.VarauksetDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.VarauksetDG_CellClick);
+            this.VarauksetDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label2
             // 
@@ -138,6 +140,7 @@
             this.VarausUBT.TabIndex = 8;
             this.VarausUBT.Text = "Lisää uusi \r\nvaraus";
             this.VarausUBT.UseVisualStyleBackColor = true;
+            this.VarausUBT.Click += new System.EventHandler(this.VarausUBT_Click);
             // 
             // MuokkaaBT
             // 
@@ -147,6 +150,7 @@
             this.MuokkaaBT.TabIndex = 9;
             this.MuokkaaBT.Text = "Muokkaa";
             this.MuokkaaBT.UseVisualStyleBackColor = true;
+            this.MuokkaaBT.Click += new System.EventHandler(this.MuokkaaBT_Click);
             // 
             // PoistaBT
             // 
@@ -156,6 +160,7 @@
             this.PoistaBT.TabIndex = 10;
             this.PoistaBT.Text = "Poista";
             this.PoistaBT.UseVisualStyleBackColor = true;
+            this.PoistaBT.Click += new System.EventHandler(this.PoistaBT_Click);
             // 
             // TyhjennaBT
             // 
@@ -165,6 +170,7 @@
             this.TyhjennaBT.TabIndex = 11;
             this.TyhjennaBT.Text = "Tyhjennä \r\nkentät";
             this.TyhjennaBT.UseVisualStyleBackColor = true;
+            this.TyhjennaBT.Click += new System.EventHandler(this.TyhjennaBT_Click);
             // 
             // VarausTB
             // 
@@ -188,6 +194,7 @@
             this.HuoneCB.Name = "HuoneCB";
             this.HuoneCB.Size = new System.Drawing.Size(121, 21);
             this.HuoneCB.TabIndex = 14;
+            this.HuoneCB.SelectedIndexChanged += new System.EventHandler(this.HuoneCB_SelectedIndexChanged);
             // 
             // HuoneNCB
             // 
@@ -232,13 +239,13 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.VarauksetDG);
             this.Controls.Add(this.panel1);
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "VaraustenHallinta";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VarauksetDG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,7 +255,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView VarauksetDG;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

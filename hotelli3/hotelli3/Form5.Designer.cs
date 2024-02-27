@@ -30,7 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.HuoneDG = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,14 +39,14 @@
             this.HuoneTCB = new System.Windows.Forms.ComboBox();
             this.PuhelinTB = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.KyllaRB = new System.Windows.Forms.RadioButton();
             this.EiRB = new System.Windows.Forms.RadioButton();
+            this.KyllaRB = new System.Windows.Forms.RadioButton();
             this.LisaaUBT = new System.Windows.Forms.Button();
             this.MuokkaaBT = new System.Windows.Forms.Button();
             this.PoistaBT = new System.Windows.Forms.Button();
             this.TyhjennaBT = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HuoneDG)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,13 +67,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Huoneiden hallinta";
             // 
-            // dataGridView1
+            // HuoneDG
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(518, 127);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(270, 311);
-            this.dataGridView1.TabIndex = 1;
+            this.HuoneDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.HuoneDG.Location = new System.Drawing.Point(518, 127);
+            this.HuoneDG.Name = "HuoneDG";
+            this.HuoneDG.Size = new System.Drawing.Size(270, 311);
+            this.HuoneDG.TabIndex = 1;
+            this.HuoneDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HuoneDG_CellContentClick);
             // 
             // label2
             // 
@@ -143,17 +144,6 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             // 
-            // KyllaRB
-            // 
-            this.KyllaRB.AutoSize = true;
-            this.KyllaRB.Location = new System.Drawing.Point(26, 28);
-            this.KyllaRB.Name = "KyllaRB";
-            this.KyllaRB.Size = new System.Drawing.Size(47, 17);
-            this.KyllaRB.TabIndex = 0;
-            this.KyllaRB.TabStop = true;
-            this.KyllaRB.Text = "Kyllä";
-            this.KyllaRB.UseVisualStyleBackColor = true;
-            // 
             // EiRB
             // 
             this.EiRB.AutoSize = true;
@@ -165,6 +155,17 @@
             this.EiRB.Text = "Ei";
             this.EiRB.UseVisualStyleBackColor = true;
             // 
+            // KyllaRB
+            // 
+            this.KyllaRB.AutoSize = true;
+            this.KyllaRB.Location = new System.Drawing.Point(26, 28);
+            this.KyllaRB.Name = "KyllaRB";
+            this.KyllaRB.Size = new System.Drawing.Size(47, 17);
+            this.KyllaRB.TabIndex = 0;
+            this.KyllaRB.TabStop = true;
+            this.KyllaRB.Text = "Kyllä";
+            this.KyllaRB.UseVisualStyleBackColor = true;
+            // 
             // LisaaUBT
             // 
             this.LisaaUBT.Location = new System.Drawing.Point(56, 333);
@@ -173,6 +174,7 @@
             this.LisaaUBT.TabIndex = 10;
             this.LisaaUBT.Text = "Lisää uusi \r\nhuone";
             this.LisaaUBT.UseVisualStyleBackColor = true;
+            this.LisaaUBT.Click += new System.EventHandler(this.LisaaUBT_Click);
             // 
             // MuokkaaBT
             // 
@@ -182,6 +184,7 @@
             this.MuokkaaBT.TabIndex = 11;
             this.MuokkaaBT.Text = "Muokkaa";
             this.MuokkaaBT.UseVisualStyleBackColor = true;
+            this.MuokkaaBT.Click += new System.EventHandler(this.MuokkaaBT_Click);
             // 
             // PoistaBT
             // 
@@ -191,6 +194,7 @@
             this.PoistaBT.TabIndex = 12;
             this.PoistaBT.Text = "Poista";
             this.PoistaBT.UseVisualStyleBackColor = true;
+            this.PoistaBT.Click += new System.EventHandler(this.PoistaBT_Click);
             // 
             // TyhjennaBT
             // 
@@ -200,6 +204,7 @@
             this.TyhjennaBT.TabIndex = 13;
             this.TyhjennaBT.Text = "Tyhjennä \r\nkentät";
             this.TyhjennaBT.UseVisualStyleBackColor = true;
+            this.TyhjennaBT.Click += new System.EventHandler(this.TyhjennaBT_Click);
             // 
             // Form5
             // 
@@ -218,13 +223,13 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.HuoneDG);
             this.Controls.Add(this.panel1);
             this.Name = "Form5";
             this.Text = "HuoneidenHallinta";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HuoneDG)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -236,7 +241,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView HuoneDG;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

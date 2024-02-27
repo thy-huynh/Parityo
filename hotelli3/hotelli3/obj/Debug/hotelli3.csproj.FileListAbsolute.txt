@@ -1,0 +1,11 @@
+C:\Users\esko.sailakivi\source\repos\Parityo\hotelli3\hotelli3\obj\Debug\hotelli3.csproj.AssemblyReference.cache
+C:\Users\esko.sailakivi\source\repos\Parityo\hotelli3\hotelli3\obj\Debug\hotelli3.csproj.SuggestedBindingRedirects.cache
+C:\Users\esko.sailakivi\source\repos\Parityo\hotelli3\hotelli3\obj\Debug\hotelli3.exe.config
+C:\Users\esko.sailakivi\source\repos\Parityo\hotelli3\hotelli3\obj\Debug\hotelli3.Form1.resources
+C:\Users\esko.sailakivi\source\repos\Parityo\hotelli3\hotelli3\obj\Debug\hotelli3.Form2.resources
+C:\Users\esko.sailakivi\source\repos\Parityo\hotelli3\hotelli3\obj\Debug\hotelli3.Form3.resources
+C:\Users\esko.sailakivi\source\repos\Parityo\hotelli3\hotelli3\obj\Debug\hotelli3.Form4.resources
+C:\Users\esko.sailakivi\source\repos\Parityo\hotelli3\hotelli3\obj\Debug\hotelli3.Form5.resources
+C:\Users\esko.sailakivi\source\repos\Parityo\hotelli3\hotelli3\obj\Debug\hotelli3.Properties.Resources.resources
+C:\Users\esko.sailakivi\source\repos\Parityo\hotelli3\hotelli3\obj\Debug\hotelli3.csproj.GenerateResource.cache
+C:\Users\esko.sailakivi\source\repos\Parityo\hotelli3\hotelli3\obj\Debug\hotelli3.csproj.CoreCompileInputs.cache

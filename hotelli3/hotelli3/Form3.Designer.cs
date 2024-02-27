@@ -42,7 +42,7 @@
             this.SnimiTB = new System.Windows.Forms.TextBox();
             this.OsoiteTB = new System.Windows.Forms.TextBox();
             this.PostiNTB = new System.Windows.Forms.TextBox();
-            this.b = new System.Windows.Forms.TextBox();
+            this.PostitoimiTB = new System.Windows.Forms.TextBox();
             this.KtunnusTB = new System.Windows.Forms.TextBox();
             this.SalaTB = new System.Windows.Forms.TextBox();
             this.asiakasBT = new System.Windows.Forms.Button();
@@ -77,6 +77,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(346, 330);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // EnimiLB
             // 
@@ -169,12 +170,12 @@
             this.PostiNTB.Size = new System.Drawing.Size(100, 20);
             this.PostiNTB.TabIndex = 12;
             // 
-            // b
+            // PostitoimiTB
             // 
-            this.b.Location = new System.Drawing.Point(182, 269);
-            this.b.Name = "b";
-            this.b.Size = new System.Drawing.Size(100, 20);
-            this.b.TabIndex = 13;
+            this.PostitoimiTB.Location = new System.Drawing.Point(182, 269);
+            this.PostitoimiTB.Name = "PostitoimiTB";
+            this.PostitoimiTB.Size = new System.Drawing.Size(100, 20);
+            this.PostitoimiTB.TabIndex = 13;
             // 
             // KtunnusTB
             // 
@@ -198,6 +199,7 @@
             this.asiakasBT.TabIndex = 16;
             this.asiakasBT.Text = "Lisää uusi \r\nasiakas";
             this.asiakasBT.UseVisualStyleBackColor = true;
+            this.asiakasBT.Click += new System.EventHandler(this.asiakasBT_Click);
             // 
             // MuokkaaBT
             // 
@@ -207,6 +209,7 @@
             this.MuokkaaBT.TabIndex = 17;
             this.MuokkaaBT.Text = "Muokkaa";
             this.MuokkaaBT.UseVisualStyleBackColor = true;
+            this.MuokkaaBT.Click += new System.EventHandler(this.MuokkaaBT_Click);
             // 
             // PoistaBT
             // 
@@ -216,6 +219,7 @@
             this.PoistaBT.TabIndex = 18;
             this.PoistaBT.Text = "Poista";
             this.PoistaBT.UseVisualStyleBackColor = true;
+            this.PoistaBT.Click += new System.EventHandler(this.PoistaBT_Click);
             // 
             // TyhjennaBT
             // 
@@ -225,6 +229,7 @@
             this.TyhjennaBT.TabIndex = 19;
             this.TyhjennaBT.Text = "Tyhjennä\r\nkentät";
             this.TyhjennaBT.UseVisualStyleBackColor = true;
+            this.TyhjennaBT.Click += new System.EventHandler(this.TyhjennaBT_Click);
             // 
             // Form3
             // 
@@ -237,7 +242,7 @@
             this.Controls.Add(this.asiakasBT);
             this.Controls.Add(this.SalaTB);
             this.Controls.Add(this.KtunnusTB);
-            this.Controls.Add(this.b);
+            this.Controls.Add(this.PostitoimiTB);
             this.Controls.Add(this.PostiNTB);
             this.Controls.Add(this.OsoiteTB);
             this.Controls.Add(this.SnimiTB);
@@ -252,7 +257,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.Text = "AsiakkaidenHallinta";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -277,7 +282,7 @@
         private System.Windows.Forms.TextBox SnimiTB;
         private System.Windows.Forms.TextBox OsoiteTB;
         private System.Windows.Forms.TextBox PostiNTB;
-        private System.Windows.Forms.TextBox b;
+        private System.Windows.Forms.TextBox PostitoimiTB;
         private System.Windows.Forms.TextBox KtunnusTB;
         private System.Windows.Forms.TextBox SalaTB;
         private System.Windows.Forms.Button asiakasBT;
