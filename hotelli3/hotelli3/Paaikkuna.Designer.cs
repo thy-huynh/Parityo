@@ -1,6 +1,6 @@
 ﻿namespace hotelli3
 {
-    partial class Form2
+    partial class PaaikkunaForm
     {
         /// <summary>
         /// Required designer variable.
@@ -88,7 +88,7 @@
             this.hallitseHuoneitaToolStripMenuItem.Text = "Hallitse huoneita";
             this.hallitseHuoneitaToolStripMenuItem.Click += new System.EventHandler(this.hallitseHuoneitaToolStripMenuItem_Click);
             // 
-            // Form2
+            // PaaikkunaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -97,7 +97,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form2";
+            this.Name = "PaaikkunaForm";
             this.Text = "Pääikkuna";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);

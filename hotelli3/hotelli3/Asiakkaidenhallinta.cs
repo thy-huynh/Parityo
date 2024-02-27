@@ -12,10 +12,10 @@ using MySql.Data.MySqlClient;
 
 namespace hotelli3
 {
-    public partial class Form3 : Form
+    public partial class AsiakkaidenHallintaForm : System.Windows.Forms.Form
     {
         ASIAKAS asiakas = new ASIAKAS();
-        public Form3()
+        public AsiakkaidenHallintaForm()
         {
             InitializeComponent();
         }

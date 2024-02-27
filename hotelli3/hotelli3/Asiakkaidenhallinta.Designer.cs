@@ -1,6 +1,6 @@
 ﻿namespace hotelli3
 {
-    partial class Form3
+    partial class AsiakkaidenHallintaForm
     {
         /// <summary>
         /// Required designer variable.
@@ -231,7 +231,7 @@
             this.TyhjennaBT.UseVisualStyleBackColor = true;
             this.TyhjennaBT.Click += new System.EventHandler(this.TyhjennaBT_Click);
             // 
-            // Form3
+            // AsiakkaidenHallintaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -256,7 +256,7 @@
             this.Controls.Add(this.EnimiLB);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
-            this.Name = "Form3";
+            this.Name = "AsiakkaidenHallintaForm";
             this.Text = "AsiakkaidenHallinta";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

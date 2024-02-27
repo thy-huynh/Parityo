@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace hotelli3
 {
-    public partial class Form4 : Form
+    public partial class VaraustenHallintaForm : System.Windows.Forms.Form
     {
-        public Form4()
+        public VaraustenHallintaForm()
         {
             InitializeComponent();
         }
@@ -117,11 +117,6 @@ namespace hotelli3
         }
 
         private void TyhjennaBT_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

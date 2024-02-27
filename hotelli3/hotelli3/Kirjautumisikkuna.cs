@@ -11,9 +11,9 @@ using MySql.Data.MySqlClient;
 
 namespace hotelli3
 {
-    public partial class Form1 : Form
+    public partial class KirjautumisForm : System.Windows.Forms.Form
     {
-        public Form1()
+        public KirjautumisForm()
         {
             InitializeComponent();
         }

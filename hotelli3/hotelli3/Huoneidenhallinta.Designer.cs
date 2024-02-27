@@ -1,6 +1,6 @@
 ﻿namespace hotelli3
 {
-    partial class Form5
+    partial class HuoneidenHallintaForm
     {
         /// <summary>
         /// Required designer variable.
@@ -206,7 +206,7 @@
             this.TyhjennaBT.UseVisualStyleBackColor = true;
             this.TyhjennaBT.Click += new System.EventHandler(this.TyhjennaBT_Click);
             // 
-            // Form5
+            // HuoneidenHallintaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -225,7 +225,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.HuoneDG);
             this.Controls.Add(this.panel1);
-            this.Name = "Form5";
+            this.Name = "HuoneidenHallintaForm";
             this.Text = "HuoneidenHallinta";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

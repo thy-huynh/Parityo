@@ -1,6 +1,6 @@
 ﻿namespace hotelli3
 {
-    partial class Form4
+    partial class VaraustenHallintaForm
     {
         /// <summary>
         /// Required designer variable.
@@ -76,7 +76,7 @@
             this.VarauksetDG.Size = new System.Drawing.Size(305, 325);
             this.VarauksetDG.TabIndex = 1;
             this.VarauksetDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.VarauksetDG_CellClick);
-            this.VarauksetDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.VarauksetDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.VarauksetDG_CellClick);
             // 
             // label2
             // 
@@ -218,7 +218,7 @@
             this.UlosDTP.Size = new System.Drawing.Size(200, 20);
             this.UlosDTP.TabIndex = 17;
             // 
-            // Form4
+            // VaraustenHallintaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -241,7 +241,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.VarauksetDG);
             this.Controls.Add(this.panel1);
-            this.Name = "Form4";
+            this.Name = "VaraustenHallintaForm";
             this.Text = "VaraustenHallinta";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

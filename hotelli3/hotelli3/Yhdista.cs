@@ -8,7 +8,7 @@ using MySql.Data.MySqlClient;
 
 namespace hotelli3
 {
-    internal class Class1
+    internal class Yhdista
     {
         private readonly MySqlConnection yhteys = new MySqlConnection("datasource=localhost; port=3306;username=root;password=;database=hotelli");
         
